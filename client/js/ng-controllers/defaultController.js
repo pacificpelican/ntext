@@ -11,15 +11,6 @@ mainModule.controller('defaultController', function($scope, $routeParams, $locat
 
 	getAllTexts();
 
-	var showText = function(text){	//	This is not used.
-		console.log("show text:", text);
-		defaultFactory.getText(text, function(text){
-			$scope.text = text.text;
-			$scope.the_id = text._id;
-			console.log("controller [showText] -> Factory (showText); text: ", $scope.text);
-		});
-	}	//	See the textController for the method looking up a post
-
 	$scope.addText = function(newText){
 		console.log('scope: addText')
 		var dt = new Date();

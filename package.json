@@ -1,0 +1,17 @@
+{
+  "name": "nText",
+  "email" : "2016@sf3am.com",
+  "url" : "http://danmckeown.info/code/ntext/",
+  "version": "0.3.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "nedb": "latest"
+  },
+  "devDependencies": {
+  "protractor": "*"
+  }
+}

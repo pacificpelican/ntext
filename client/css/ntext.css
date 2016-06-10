@@ -1,0 +1,94 @@
+/*  nText CSS by Dan McKeown copyright April 2016								*/
+/*  http://danmckeown.info									*/
+/*  v0.1.0								    */
+/*  nText app by Dan McKeown | http://danmckeown.info/code/ntext    */
+
+div.main span {
+    outline-style: double;
+}
+
+@media screen and (max-width: 650px) {
+    textarea.writing_area {
+        width: 84vw;
+    }
+    textarea.clips {
+        width: 74vw;
+    }
+}
+@media screen and (min-width: 651px) {
+    textarea.writing_area {
+        min-width: 910px;
+        min-height: 402px;
+    }
+    textarea.clips {
+        min-width: 700px;
+        min-height: 10px;
+    }
+}
+
+textarea.writing_area {
+    height: 210px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: "Menlo", Tahoma, monospace, sans-serif;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+    font-size: 14px;
+}
+
+textarea.clips {
+    height: 45px;
+	border: 2px solid #cccccc;
+	padding: 3px;
+	font-family: "Menlo", Tahoma, monospace, sans-serif;
+/*	background-image: url(bg.gif); */
+	background-position: bottom right;
+	background-repeat: no-repeat;
+    font-size: 11px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+div#clipboard_window {
+    min-width: 60vw;
+}
+
+div.html_content {
+    white-space:pre-line;
+}
+
+p#single_post {
+    margin-top: 4px;
+    line-height: 150%
+}
+
+div#single_text_div h5 {
+    margin-top: -42px;
+}
+
+div#single_text_div span {
+    color: gray;
+}
+
+img#n_text_logo {
+    max-width: 150px;
+    padding-top: -10px;
+}
+
+h1 {
+    padding-bottom: 12px;
+}
+
+div#image_container {
+    max-width: 140px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: DodgerBlue;
+    display: inline;
+}
+
+textarea#clip_creation_zone {
+    background-image: url('../assets/graphics/ntextlogo.jpg');
+}

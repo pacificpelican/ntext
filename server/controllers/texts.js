@@ -1,5 +1,5 @@
 var nedb = require('nedb');
-var Texts = new nedb({ filename: 'db/ntext.db', autoload: true });
+var Texts = new nedb({ filename: 'db/ntext.json', autoload: true });
 
 //  nText app by Dan McKeown | http://danmckeown.info/code/ntext
 module.exports = (function(app) {

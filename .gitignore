@@ -2,6 +2,7 @@ node_modules
 npm-debug.log
 http:/
 db/ntext.db
+db/ntext.json
 
 client/assets/files/*
 

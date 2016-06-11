@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './client')));
 
-require('./server/config/nedb.js');
+require('./server/config/mongoose.js');
 require('./server/config/routes.js')(app);
 
 app.listen(7387, function(){

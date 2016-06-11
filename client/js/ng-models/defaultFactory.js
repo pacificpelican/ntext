@@ -25,8 +25,20 @@ mainModule.factory('defaultFactory', function($http) {
 		});
 	}
 
-	factory.getTextP = function(text, callback){	//	Post not Get
-		console.log("id:", text);
+	factory.getText = function(text, callback){	//	Currently app doesn't use
+		console.log("##!#! , ", text);
+		$http({
+		    url: '/text/getText',
+		    method: "GET",
+		    params: {text_id: text}
+		 }).success(function(returned_data_from_server){
+			console.log("SUCCESSFUL - BACK TO FACTORY FROM GETTING TEXT", returned_data_from_server);
+			callback(returned_data_from_server);
+		})
+	}
+
+	factory.getTextP = function(text, callback){	//	Currently app uses this
+		console.log("id:", text);				//	Post not Get
 		$http({
 		    url: '/text/getText',
 		    method: "POST",
@@ -36,6 +48,13 @@ mainModule.factory('defaultFactory', function($http) {
 			callback(returned_data_from_server);
 		})
 	}
+
+	factory.updateText = function(text, callback){	//	Currently not used
+		$http.post('/text/updateText', text).success(function(returned_data_from_server){
+			console.log("SUCCESSFUL - BACK TO FACTORY FROM UPDATING TEXT", returned_data_from_server);
+			callback(returned_data_from_server);
+		});
+	} // 'edit' button actually leads to new post form with old text pre-filled
 
 	return factory;
 });

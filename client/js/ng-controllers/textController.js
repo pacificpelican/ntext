@@ -12,7 +12,7 @@ mainModule.controller('textController', function($scope, $routeParams, $location
 			$scope.full_text = $scoopy;
 			$scope.text = text;
 			console.log("controller [showText] <- Factory (getTextP); text: ", $scope.text);
-			console.log("text: ", $scoopy);
+			console.log("text IS : ", $scoopy);
 		});
 	}
 
@@ -21,7 +21,7 @@ mainModule.controller('textController', function($scope, $routeParams, $location
 	$scope.updateText = function(tex) {
 		console.log("text: " + tex.text);
 		var that = tex.text;
-		console.log("controller [$scope.updateText] -> Factory (addText)");
+		console.log("controller [updateText] -> Factory (addText)");
 		defaultFactory.addText(tex,function(text){
 			if(text.errors)
 			{

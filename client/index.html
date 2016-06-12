@@ -13,6 +13,9 @@
 	<script type="text/javascript" src="js/ng-controllers/defaultController.js"></script>
 	<script type="text/javascript" src="js/ng-controllers/textController.js"></script>
 	<script type="text/javascript" src="js/ng-controllers/versionController.js"></script>
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+	<script src="js/jquery.js"></script>    
+	<script>if (window.module) module = window.module;</script>
 	<script>
 		var domReady = function(callback) {
 	    	document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);

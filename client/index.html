@@ -13,13 +13,31 @@
 	<script type="text/javascript" src="js/ng-controllers/defaultController.js"></script>
 	<script type="text/javascript" src="js/ng-controllers/textController.js"></script>
 	<script type="text/javascript" src="js/ng-controllers/versionController.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/joeypc.js"></script>
 	<script>
 		var domReady = function(callback) {
 	    	document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
 		};
 		domReady(function() {
+			function joeypc_random_light_background() {
+				var randomNumber = "#F";
+					console.log('joeypc new random light background runnning');
+					for (i = 0; i < 1; i++) {
+						var digit = Math.floor((Math.random() * 9) + 1);
+						randomNumber = randomNumber + digit;
+											}
+					randomNumber = randomNumber + "F";
+					for (i = 0; i < 1; i++) {
+						var digit = Math.floor((Math.random() * 9) + 1);
+						randomNumber = randomNumber + digit;
+											}
+					randomNumber = randomNumber + "F";
+					for (i = 0; i < 1; i++) {
+						var digit = Math.floor((Math.random() * 9) + 1);
+						randomNumber = randomNumber + digit;
+											}
+					$( "body" ).css( "background-color", randomNumber );
+				    console.log("changing background color to " + randomNumber);
+												}
 			joeypc_random_light_background();
 			console.log('localStorage clipboard:' + localStorage.clipboard);
 			var localStorage_clipboard = localStorage.getItem('clipboard');

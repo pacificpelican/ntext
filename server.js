@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
-
+//	This page is for launcing the nText app on a local server: npm run start
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './client')));
 

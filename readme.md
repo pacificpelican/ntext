@@ -4,7 +4,7 @@ nText [henceforth ntext] is a text editor written in JavaScript by [Dan McKeown]
 ntext requires [NodeJS](https://nodejs.org/en/) 4+.
 AngularJS and angular-route 1.5.x are also required and are currently included in the /client directory.
 In order to set it up, make sure the code is unpacked in your file system.
-The database will be stored in a [NeDB](https://github.com/louischatriot/nedb) database in the app directory at /db/ntext.db.
+The database will be stored in a [NeDB](https://github.com/louischatriot/nedb) database in the app directory at /db/ntext.json.
 Now use your command line to go to the directory where the ntext code is.
 Run this command to make sure you have your server-side dependencies:
 `sudo npm install`

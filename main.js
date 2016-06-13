@@ -4,7 +4,6 @@ var path = require('path');
 var bodyParser = require('body-parser');
 //	This page is for launcing the nText app on a local server: npm run app
 app.use(bodyParser.json());
-//  var mainWindowLoc = express.static(path.join(__dirname, './client'));
 app.use(express.static(path.join(__dirname, './client')));
 
 require('./server/config/nedb.js');
@@ -29,14 +28,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 1000, height: 800})
 
   // and load the index.html of the app.
-  //    mainWindow.loadURL(`file://${__dirname}/index.html`)
-//  mainWindow.loadURL(mainWindow.loadURL(mainWindowLoc));
-//  mainWindow.loadURL('http://localhost:7387');
   mainWindow.loadURL('http://localhost:7387');
-//  mainWindow.loadURL(`file://${__dirname}/client/index.html`)
-
-  // Open the DevTools.
-//  mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -61,6 +53,11 @@ E_app.on('window-all-closed', function () {
   }
 })
 
+//  ElectronJS boilerplate not used for this app:
+
+// Open the DevTools.
+//  mainWindow.webContents.openDevTools()
+
 // E_app.on('activate', function () {
 //   // On OS X it's common to re-create a window in the app when the
 //   // dock icon is clicked and there are no other windows open.
@@ -68,6 +65,3 @@ E_app.on('window-all-closed', function () {
 //     createWindow()
 //   }
 // })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.

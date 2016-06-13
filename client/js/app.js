@@ -6,7 +6,7 @@ mainModule.filter('reverse', function() {
     return texts.slice().reverse();
   };
 });
-
+//  This file contains the front-end routes
 mainModule.config(function ($routeProvider) {
 	$routeProvider
 	.when('/',{

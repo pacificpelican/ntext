@@ -11,3 +11,4 @@ Run this command to make sure you have your server-side dependencies:
 Now type in this to start the NodeJS server:
 `sudo npm run start`
 Once this is running, you can go to [local host 7387](http://localhost:7387) in your browser and use the ntext app to create and update texts and take advantage of the DOM clipboard.
+Find out more in the [about file](client/assets/ntextAbout.md).

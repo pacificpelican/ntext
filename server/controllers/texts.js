@@ -1,7 +1,5 @@
 var nedb = require('nedb');
-//	var Texts = new nedb({ filename: './db/ntext.json', autoload: true });
-//	var Texts = new nedb({ filename: './db/ntext.json'});
-	var Texts = new nedb({ filename: `${__dirname}/../../db/ntext.json`, autoload: true });
+var Texts = new nedb({ filename: `${__dirname}/../../db/ntext.json`, autoload: true });
 
 //  nText app by Dan McKeown | http://danmckeown.info/code/ntext
 module.exports = (function(app) {
@@ -51,7 +49,6 @@ module.exports = (function(app) {
 		},
 		getText: function(request, response) {
 			console.log("gettext function running");
-			console.log(the_key);
 			console.log(request.param);
 			var texts_id = request.param.text_id;
 			Texts.findOne({ '_id': ObjectId(texts_id) }, function (err, data) {

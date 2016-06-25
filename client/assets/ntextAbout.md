@@ -10,11 +10,11 @@ The nText (aka ntext) app is a simple text creation, editing and archiving tool 
 
 The [ntext GitHub repo](https://github.com/pacificpelican/ntext) has a few different branches:
 
-[master](tree/master): This is the main branch, used for ongoing development of the app.  This branch uses Angular 1, [ExpressJS](http://expressjs.com/), and [NeDB](https://github.com/louischatriot/nedb).
+[master](https://github.com/pacificpelican/ntext/tree/master): This is the main branch, used for ongoing development of the app.  This branch uses Angular 1, [ExpressJS](http://expressjs.com/), and [NeDB](https://github.com/louischatriot/nedb).
 
-[mongo](tree/mongo): This is the branch that represents the earlier state of the app.  It uses MongoDB instead of NeDB.
+[mongo](https://github.com/pacificpelican/ntext/tree/mongo): This is the branch that represents the earlier state of the app.  It uses MongoDB instead of NeDB.
 
-[nedb-040-beta1](tree/nedb-040-beta1): Historical: this branch represents the master branch back when it was at rough parity with the mongo branch.
+[nedb-040-beta1](https://github.com/pacificpelican/ntext/tree/nedb-040-beta1): Historical: this branch represents the master branch back when it was at rough parity with the mongo branch.
 
 gh-pages: This is for the [project's web site](http://ntext.pacificio.com) code, hosted at ntext.pacificio.com.
 
@@ -42,7 +42,7 @@ Before using the app you need to make sure that your dependencies are in place:
 
 `sudo npm install`
 
-There are two ways to get the app running: as a NodeJS application, as mentioned in the [readme](../../../readme.md):
+There are two ways to get the app running: as a NodeJS application, as mentioned in the [readme](../../../master/readme.md):
 
 `sudo npm run start`
 

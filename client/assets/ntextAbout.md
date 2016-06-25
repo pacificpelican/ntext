@@ -1,26 +1,25 @@
-nText Text Editor App by Dan McKeown
+# [nText](http://ntext.pacificio.com) Text Editor App by [Dan McKeown](http://danmckeown.info)
 
-About: June 2016
-
-http://ntext.pacificio.com
-
-http://danmckeown.info
-
-The nText (aka ntext) app is a simple text creation, editing and archiving tool written for the NodeJS platform.
+## About: June 2016
 
 
-ntext has a few different branches:
-
-master: This is the main branch, used for ongoing development of the app.  This branch uses Angular 1, ExpressJS, and NeDB.
-
-mongo: This is the branch that represents the earlier state of the app.  It uses MongoDB instead of NeDB.
-
-nedb-040-beta1: Historical: this branch represents the master branch back when it was at rough parity with the mongo branch.
-
-gh-pages: This is for the project's web site code, hosted at ntext.pacificio.com.
+The nText (aka ntext) app is a simple text creation, editing and archiving tool written for the [NodeJS](https://nodejs.org/en/) platform.
 
 
-User Interface
+### Branches
+
+The [ntext GitHub repo](https://github.com/pacificpelican/ntext) has a few different branches:
+
+[master](tree/master): This is the main branch, used for ongoing development of the app.  This branch uses Angular 1, [ExpressJS](http://expressjs.com/), and [NeDB](https://github.com/louischatriot/nedb).
+
+[mongo](tree/mongo): This is the branch that represents the earlier state of the app.  It uses MongoDB instead of NeDB.
+
+[nedb-040-beta1](tree/nedb-040-beta1): Historical: this branch represents the master branch back when it was at rough parity with the mongo branch.
+
+gh-pages: This is for the [project's web site](http://ntext.pacificio.com) code, hosted at ntext.pacificio.com.
+
+
+### User Interface
 
 ntext uses web technologies to create a simple UI for creating, updating, archiving and deleting chunks of text.  The front page lists all the posts in the database and gives the user buttons to view, edit and delete each post.
 
@@ -37,24 +36,24 @@ Clicking on the delete button for a post behaves as expected, instantly and with
 The UI is built with the [Ryukyu](http://danmckeown.info/code/ryukyu) front-end framework's CSS along with some slight color randomness JavaScript from [joeypc](http://danmckeown.info/code/joeypc).
 
 
-Running the app
+### Running the app
 
 Before using the app you need to make sure that your dependencies are in place:
 
-sudo npm install
+`sudo npm install`
 
-There are two ways to get the app running: as a NodeJS application:
+There are two ways to get the app running: as a NodeJS application, as mentioned in the [readme](../../../readme.md):
 
-sudo npm run start
+`sudo npm run start`
 
-or as an Electron app (this requires the Electron CLI):
+or as an [Electron](http://electron.atom.io/) app (this requires the Electron CLI):
 
-electron .
+`electron .`
 
 [Due to file system issues, these two different ways of running the app may not always work well when alternating between them.]
 
 
-The app, packaged up
+### The app, packaged up
 
 A beta version of the app has been packaged up as an Electron app for use on the desktop.
 

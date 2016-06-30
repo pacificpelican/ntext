@@ -1,4 +1,4 @@
-//	joeypc JS/jQuery framework http://joeypc.com version 0.1.4 //
+//	joeypc JS/jQuery framework http://danmckeown.info/code/joeypc version 0.1.4 //
 //	https://github.com/pacificpelican/joeypc //
 //  copyright May-July 2015 by Dan McKeown http://danmckeown.info //
 //	Licensed under MIT license //
